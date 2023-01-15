@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <!-- https://dev.to/clairecodes/how-to-make-a-sticky-sidebar-with-two-lines-of-css-2ki7 -->
+  <body>
+    <main>
+        <!--div id="debugcursor"></div-->
+        <h1 class="other">PneuMatic State Machines</h1>
+
+
+        <!-- <div class="sticky">sticky thing<br>sticky thing<br>sticky thing<br>sticky thing<br></div> -->
+
+        <div>
+        <h2>State machine Instances</h2>
+        </div>
+
+
+        <button onclick="saveOnClick();">Save JSON</button><br>
+        <input type="file" id="file-input" /><br>
+        <button onclick="clearView();">Clear editor</button><br>
+        <button onclick="addStateMachine();">Add state machine</button><br>
+
+        <h2>State machine Types</h2>
+        <div class="wrapper">
+          <div class="main" id="machines">
+            Main content
+            <!--blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>-->
+
+            <!--div id="sm0">
+              <button onclick="addState(machines['sm0']);">Add state</button>
+              <button onclick="addTransition(machines['sm0']);">Add transition</button>
+              <div class="statediagram" id="statediagram0"></div>
+            </div-->
+
+          </div>
+          <div class="sidebar">
+            <button onclock="actionViewSimulateMode();">Simulate</button>
+            <button onclock="actionViewEditMode();">Edit</button>
+
+            Sticky sidebar
+
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+            blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
+
+           <div class="digitalio">
+             DI <input type="checkbox"/> <input type="text" value="DI name"/><br/>
+           </div>
+           <div class="digitalio">
+             DO <input type="checkbox" disabled="disabled"/> <input type="text" value="DO name"/>
+           </div>
+           <div class="digitalio">
+             timer <input type="checkbox" disabled="disabled"/> <input type="text" value="timer name"/> Remaining: <span>10s</span>
+           </div>
+
+          </div>
+        </div>
+
+      <div>
+        <h3>Output JSON</h3><br>
+        <button onclick="generateJSON();">Generate</button><br>
+        <pre id="output">
+        </pre>
+
+      </div>
+
+    </main>
+	<script src="index.js"></script>
+  Copyright &#169; 2022 Juraj Galbavý
+  </body>
+</html>

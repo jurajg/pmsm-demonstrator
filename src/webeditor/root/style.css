@@ -1,0 +1,130 @@
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main,
+.sidebar {
+  border: 2px solid black;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.main {
+  width: 60%;
+  //height: 150vh;
+}
+
+.sidebar {
+  width: 35%;
+  //height: 25vh;
+}
+
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-height: 90vh;
+}
+
+body {
+  background-color: #ccc;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.digitalio {
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #fff;
+}
+
+
+.statediv {
+  border-radius: 14px;
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+   //width: max-content;
+   width: auto;
+   //white-space: nowrap;
+   //display: flex;
+   //flex-wrap: wrap;
+}
+
+.statedivheader {
+  border-top-right-radius: 14px;
+  border-top-left-radius:  14px;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.transitiondiv {
+  padding: 2px;
+  line-height: 1.5;
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+.transitiondivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+
+
+
+.statediagram {
+  position:relative;
+  border: 1px solid black;
+  height:  90vh;
+}
+
+
+
+#debugcursor {
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  z-index: 50;
+  width: 7px;
+  height: 7px;
+  background-color: #ffbb00;
+}
+
+.arrow-right {
+  // background-color: #0000;
+  position:absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+
+  border-left: 12px solid black;
+}
+
+
+.start-state {
+  position:absolute;
+  top: 5px;
+  left: 5px;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
