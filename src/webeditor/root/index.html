@@ -14,23 +14,20 @@
         <!--div id="debugcursor"></div-->
         <h1 class="other">PneuMatic State Machines</h1>
 
-
-        <!-- <div class="sticky">sticky thing<br>sticky thing<br>sticky thing<br>sticky thing<br></div> -->
-
-        <div>
-        <h2>State machine Instances</h2>
-        </div>
-
-
         <button onclick="saveOnClick();">Save JSON</button><br>
         <input type="file" id="file-input" /><br>
         <button onclick="clearView();">Clear editor</button><br>
-        <button onclick="addStateMachine();">Add state machine</button><br>
+
+        <div>
+        <h2>State machine Instances</h2>
+        <div id="sminstances">
+        </div>
+        <button onclick="addSMInstance();">Add machine instance</button><br>
+        </div>
 
         <h2>State machine Types</h2>
         <div class="wrapper">
           <div class="main" id="machines">
-            Main content
             <!--blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
             blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
             blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br> blabla<br>
@@ -44,6 +41,7 @@
               <button onclick="addTransition(machines['sm0']);">Add transition</button>
               <div class="statediagram" id="statediagram0"></div>
             </div-->
+            <button onclick="addStateMachine();">Add state machine type</button><br>
 
           </div>
           <div class="sidebar">
